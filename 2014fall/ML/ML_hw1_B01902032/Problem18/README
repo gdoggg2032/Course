@@ -1,0 +1,29 @@
+結構與上一大題差不多。
+
+main:
+	讀取：
+		分別讀取training data以及test data。
+		(將test data接在training data後面）
+
+	mistake variable:
+		用best_mistake記錄最少錯誤數，用best_w記錄最少錯誤數的w向量。
+		用old_mistake記錄每次更新w後的錯誤數。
+	
+	50 updates:
+		用i記錄，當best_w更新時i++，且更新best_mistake
+	
+	pocket:
+		選擇任意一個data(產生一個亂數<n)，
+		若是錯誤的話，更新w，算出這個w產生多少錯誤，
+		在確認best_mistake是否還是最少錯誤數，若不是就當作一次update
+	
+	test:
+		50次update後，用best_w確認test_data，並記錄錯誤次數(count1)
+	
+	print:
+		每次確認test_data後，印出該次學習的錯誤次數，
+		並用sum記錄該次學習的錯誤次數（累加），
+		跑完2000次學習後，將所有的錯誤次數(sum)除以(2000*test_data數）
+		得到平均的錯誤率。
+	
+	

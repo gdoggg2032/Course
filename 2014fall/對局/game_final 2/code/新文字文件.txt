@@ -1,0 +1,1 @@
+g++ -o search.exe main.cc anqi.cc ClientSocket.cpp Protocol.cpp -static -s -lwsock32 -D _WINDOWS

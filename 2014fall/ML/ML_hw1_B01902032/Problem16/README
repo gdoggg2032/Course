@@ -1,0 +1,14 @@
+大致上與Problem15相同。
+
+shuff:
+	shuffle，產生一組亂數order(0~n-1)，作為檢查data的順序。
+
+main:
+	用一個for迴圈跑2000次PLA，每次都用shuff產生一組順序，
+	依照這個順序檢查data。（與Problem15的差別在data[i]改成data[order[i]])
+	用一個sum記錄每次跑PLA的錯誤次數。（平均＝總量/次數）
+
+	print:
+		每次PLA都印出該次錯誤次數(count1)，可以看出由於是亂數順序，
+		所以每次的結果都不一定相同。
+		最後印出sum/2000(次)，作為平均錯誤次數。

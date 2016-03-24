@@ -1,0 +1,15 @@
+Files:
+onebestRecognition.mlf: 語音辨識的結果
+news98.qry: query set
+semantic.ans: semantic retrieval groundTruth
+  first column: query num (對應news98.qry)
+  second column: not important
+  third column: file name
+  forth column: always 1
+
+You can go http://trec.nist.gov/trec_eval/ to download eval retrieval results program
+( you can see usage: ./trec_eval )
+
+The format of your result file from your retrieval system need to be the same as semantic.ans
+
+

@@ -1,0 +1,6 @@
+VSM_simple.py: VSM with only TF and no pseudo feedback
+VSM_TFIDF_noPRF.py: VSM with TF-IDF and no pseudo feedback
+VSM_TF_PRF.py: VSM with only TF and using pseudo feedback
+VSM.py: VSM with TF-IDF and using pseudo feedback
+
+example: python VSM.py INDEX.txt DOC_INDEX.txt DATA.txt news98.qry result

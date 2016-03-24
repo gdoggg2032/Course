@@ -1,0 +1,4 @@
+與Problem18幾乎一樣
+
+差別在於，verify時，用的w為50次update後的w，
+而不是錯誤數最少的best_w。
